@@ -21,14 +21,16 @@ package execises;
  */
 public class Test3 {
 	public static final void isKPalindrome(String base, int k) {
-		// if (k < 0 || k > 30 || base.length() > 20000)
-		// throw new IllegalArgumentException();
-		// main: for (int i = 0; i < base.length(); i++) {
-		// char a = base.charAt(i);
-		// }
+		int acc = 0;
+		main: for (int i = 0; i < base.length() / 2; i++) {
+			char a = base.charAt(i);
+			for (int j = base.length() - 1 - i - acc; j >= base.length() / 2; i--) {
+
+			}
+		}
 	}
-	
-	//this area is for debugging purposes XD
+
+	// this area is for debugging purposes XD
 
 	private static final String randomChar() {
 		return String.valueOf((char) ('a' + Math.random() * ('z' - 'a')));
